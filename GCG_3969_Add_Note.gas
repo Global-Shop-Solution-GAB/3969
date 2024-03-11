@@ -1,0 +1,303 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("Additional Notes")
+gui.Form1..size(5685,8400)
+gui.Form1..minx(0)
+gui.Form1..miny(0)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,Unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(8)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(-2147483633)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(True)
+gui.Form1..minbutton(True)
+gui.Form1..mousepointer(0)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(True)
+gui.Form1..ShowInTaskBar(True)
+gui.Form1..titlebar(True)
+gui.Form1.lblOrderNum.create(label,"Order Number",True,1935,255,1,450,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblOrderNum.defaultvalue("")
+gui.Form1.lblOrderNum.controlgroup(0)
+gui.Form1.lblRecordNumber.create(label,"Line Number",True,1890,240,1,2175,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblRecordNumber.defaultvalue("")
+gui.Form1.lblRecordNumber.controlgroup(0)
+gui.Form1.txtOrderNum.create(textbox,"",True,1215,300,0,450,500,True,0,Arial,8,-2147483643,1)
+gui.Form1.txtOrderNum.defaultvalue("")
+gui.Form1.txtOrderNum.controlgroup(0)
+gui.Form1.txtLineNum.create(textbox,"",True,750,300,0,2175,460,True,0,Arial,8,-2147483643,1)
+gui.Form1.txtLineNum.defaultvalue("")
+gui.Form1.txtLineNum.controlgroup(0)
+gui.Form1.lblPartNum.create(label,"Part Number",True,1935,255,1,450,1000,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblPartNum.defaultvalue("")
+gui.Form1.lblPartNum.controlgroup(0)
+gui.Form1.lblDesc.create(label,"Description",True,1935,255,1,2740,1010,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblDesc.defaultvalue("")
+gui.Form1.lblDesc.controlgroup(0)
+gui.Form1.txtPartnum.create(textbox,"",True,2000,300,0,450,1295,True,0,Arial,8,-2147483643,1)
+gui.Form1.txtPartnum.defaultvalue("")
+gui.Form1.txtPartnum.controlgroup(0)
+gui.Form1.txtDescr.create(textbox,"",True,2415,300,0,2740,1295,True,0,Arial,8,-2147483643,1)
+gui.Form1.txtDescr.defaultvalue("")
+gui.Form1.txtDescr.controlgroup(0)
+gui.Form1.lblLineSalesOrdTxt.create(label,"Line Sales Order Text",True,1935,255,1,450,2100,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblLineSalesOrdTxt.defaultvalue("")
+gui.Form1.lblLineSalesOrdTxt.controlgroup(0)
+gui.Form1.mltLineSalesOrdTxt.create(textboxm)
+gui.Form1.mltLineSalesOrdTxt.text("")
+gui.Form1.mltLineSalesOrdTxt.visible(True)
+gui.Form1.mltLineSalesOrdTxt.size(4300,2000)
+gui.Form1.mltLineSalesOrdTxt.zorder(0)
+gui.Form1.mltLineSalesOrdTxt.position(450,2390)
+gui.Form1.mltLineSalesOrdTxt.enabled(True)
+gui.Form1.mltLineSalesOrdTxt.alignment(0)
+gui.Form1.mltLineSalesOrdTxt.fontname("Arial")
+gui.Form1.mltLineSalesOrdTxt.fontsize(8)
+gui.Form1.mltLineSalesOrdTxt.BackColor(-2147483643)
+gui.Form1.mltLineSalesOrdTxt.defaultvalue("")
+gui.Form1.mltLineSalesOrdTxt.controlgroup(0)
+gui.Form1.lblLinePackingSlipTxt.create(label,"Line Packing Slip Text",True,1935,255,1,450,4650,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblLinePackingSlipTxt.defaultvalue("")
+gui.Form1.lblLinePackingSlipTxt.controlgroup(0)
+gui.Form1.mltPackSlipTxt.create(textboxm)
+gui.Form1.mltPackSlipTxt.text("")
+gui.Form1.mltPackSlipTxt.visible(True)
+gui.Form1.mltPackSlipTxt.size(4300,2000)
+gui.Form1.mltPackSlipTxt.zorder(0)
+gui.Form1.mltPackSlipTxt.position(450,4955)
+gui.Form1.mltPackSlipTxt.enabled(True)
+gui.Form1.mltPackSlipTxt.alignment(0)
+gui.Form1.mltPackSlipTxt.fontname("Arial")
+gui.Form1.mltPackSlipTxt.fontsize(8)
+gui.Form1.mltPackSlipTxt.BackColor(-2147483643)
+gui.Form1.mltPackSlipTxt.defaultvalue("")
+gui.Form1.mltPackSlipTxt.controlgroup(0)
+gui.Form1.cmdSave.create(button)
+gui.Form1.cmdSave.caption("Save")
+gui.Form1.cmdSave.visible(True)
+gui.Form1.cmdSave.size(900,425)
+gui.Form1.cmdSave.zorder(0)
+gui.Form1.cmdSave.position(450,7200)
+gui.Form1.cmdSave.enabled(True)
+gui.Form1.cmdSave.fontname("Arial")
+gui.Form1.cmdSave.fontsize(8)
+gui.Form1.cmdSave.event(click,cmdsave_click)
+gui.Form1.cmdSave.defaultvalue("")
+gui.Form1.cmdSave.controlgroup(0)
+gui.Form1.txtOrderNum.tabstop(True)
+gui.Form1.txtOrderNum.tabindex(1)
+gui.Form1.txtLineNum.tabstop(True)
+gui.Form1.txtLineNum.tabindex(2)
+gui.Form1.txtPartnum.tabstop(True)
+gui.Form1.txtPartnum.tabindex(3)
+gui.Form1.txtDescr.tabstop(True)
+gui.Form1.txtDescr.tabindex(4)
+gui.Form1.mltLineSalesOrdTxt.tabstop(True)
+gui.Form1.mltLineSalesOrdTxt.tabindex(5)
+gui.Form1.mltPackSlipTxt.tabstop(True)
+gui.Form1.mltPackSlipTxt.tabindex(6)
+gui.Form1.cmdSave.tabstop(True)
+gui.Form1.cmdSave.tabindex(7)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'Coded by:WAW
+'Date:5/12/15
+
+'open connection to the database
+F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+F.Intrinsic.Control.CallSub(Upload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3969_Add_Note.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.Unload.Start
+F.Intrinsic.Control.SetErrorHandler("Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'closes the connection to the database
+F.ODBC.Connection!con.Close
+
+'closes the program
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3969_Add_Note.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.end
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Unload.End
+
+Program.Sub.Upload.Start
+F.Intrinsic.Control.SetErrorHandler("Upload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.slineitem.Declare(String)
+V.Local.spart.Declare(String)
+V.Local.sordernum.Declare(String)
+V.Local.sdesc.Declare(String)
+V.Local.ssql.Declare(String)
+V.Local.smltlinessalesOrdtxt.Declare(String)
+V.Local.smltpacksliptxt.Declare(String)
+V.Local.srev.Declare(String)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,12010)
+	V.Passed.000162.set("Add. Note Field")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.if(V.Caller.Hook,=,12410)
+
+	V.Local.srev.Set(V.Passed.000053)
+
+	V.Local.slineitem.Set(V.Passed.000051)
+	F.Intrinsic.String.Concat(V.Local.slineitem,"0",V.Local.slineitem)
+	F.Intrinsic.String.LPad(V.Local.slineitem,"0",4,V.Local.slineitem)
+
+'	F.Intrinsic.String.RPad(V.local.slineitem,"0",1,V.local.slineitem)
+	F.Intrinsic.String.GSSPartString(V.Passed.000052,V.Passed.000053,V.Local.spart)
+
+	V.Local.sordernum.Set(V.Passed.000060)
+	F.Intrinsic.String.LPad(V.Local.sordernum,"0",7,V.Local.sordernum)
+	V.Local.sdesc.Set(V.Passed.000056)
+	
+	Gui.Form1.txtLineNum.Text(V.Local.slineitem)
+	Gui.Form1.txtPartnum.Text(V.Local.spart)
+	Gui.Form1.txtOrderNum.Text(V.Local.sordernum)
+	Gui.Form1.txtDescr.Text(V.Local.sdesc)
+
+	'check to see if the the data is already in the custom table, if so update it, if not add it
+		F.Intrinsic.String.Build("SELECT *  from GCG_3969_ADD_NOTE where PART = '{0}' and ORDER_NUM = '{1}' and LINE_ITEM = '{2}'",V.Screen.Form1!txtPartnum.Text,V.Screen.Form1!txtOrderNum.Text,V.local.slineitem,V.Local.ssql)
+		F.ODBC.Connection!con.OpenRecordsetRO("rst",V.Local.ssql)
+					
+	'if there is nothing in the database that matches the part, order number and line item then add one
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,False)
+	
+		Gui.Form1.txtPartnum.Enabled(false)
+		Gui.Form1.txtDescr.Enabled(false)
+		Gui.Form1.txtLineNum.Enabled(false)
+		Gui.Form1.txtOrderNum.Enabled(false)
+		Gui.Form1.mltLineSalesOrdTxt.Text(V.ODBC.con!rst.FieldValTrim!SO_TEXT)
+		Gui.Form1.mltPackSlipTxt.Text(V.ODBC.con!rst.FieldValTrim!PS_TEXT)
+
+		Gui.Form1..Visible(true)
+		F.ODBC.con!rst.Close
+	F.Intrinsic.Control.Else
+		Gui.Form1..Visible(true)
+
+		F.ODBC.con!rst.Close
+
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Upload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3969_Add_Note.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Upload.End
+
+program.sub.cmdsave_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.ssql.Declare(String)
+V.Local.spart.Declare(String)
+V.Local.sordernum.Declare(String)
+V.Local.slineitem.Declare(String)
+V.Local.sdesc.Declare(String)
+V.Local.ssotext.Declare(String)
+V.Local.spstext.Declare(String)
+V.Local.ssql2.Declare(String)
+
+V.Local.spart.Set(V.Screen.Form1!txtPartnum.Text)
+V.Local.slineitem.Set(V.Screen.Form1!txtLineNum.Text)
+
+F.Intrinsic.String.RPad(V.Local.slineitem,"0",4,V.Local.slineitem)
+
+'check to see if the the data is already in the custom table, if so update it, if not add it
+F.Intrinsic.String.Build("SELECT *  from GCG_3969_ADD_NOTE where PART = '{0}' and ORDER_NUM = '{1}' and LINE_ITEM = '{2}'",V.Screen.Form1!txtPartnum.Text,V.Screen.Form1!txtOrderNum.Text,V.local.slineitem,V.Local.ssql)
+F.ODBC.Connection!con.OpenRecordsetRW("rst",V.Local.ssql)
+
+'if there is nothing in the database that matches the part, order number and line item then add one
+F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,<>,False)
+	F.ODBC.con!rst.AddNew
+	F.ODBC.con!rst.Set!PART(V.local.spart)
+	F.ODBC.con!rst.Set!ORDER_NUM(V.Screen.Form1!txtOrderNum.Text)
+	F.odbc.con!rst.Set!LINE_ITEM(V.local.slineitem)
+	F.ODBC.con!rst.Set!DESCRIPTION(V.Screen.Form1!txtDescr.Text)
+	F.ODBC.con!rst.Set!SO_TEXT(V.Screen.Form1!mltLineSalesOrdTxt.Text)
+	F.ODBC.con!rst.Set!PS_TEXT(V.Screen.Form1!mltPackSlipTxt.Text)
+
+F.Intrinsic.Control.Elseif(V.ODBC.con!rst.EOF,=,False)
+	
+	'if there is something that matches then update what has been entered on the ps text and so text
+	F.Intrinsic.String.Build("Update GCG_3969_ADD_NOTE set PS_TEXT = '{0}', SO_TEXT = '{1}' WHERE DESCRIPTION ='{2}'  and PART = '{3}' and ORDER_NUM = '{4}' and LINE_ITEM = '{5}'",V.Screen.Form1!mltPackSlipTxt.Text,V.Screen.Form1!mltLineSalesOrdTxt.Text,V.Screen.Form1!txtDescr.Text,V.Screen.Form1!txtPartnum.Text,V.Screen.form1!txtOrderNum.Text,V.local.slineitem,V.Local.ssql2)
+	F.ODBC.Connection!con.OpenRecordsetRW("rst2",V.local.ssql2)
+	F.ODBC.con!rst2.Close
+
+F.Intrinsic.control.endif
+
+'upade the database, close connection and exit the sub
+F.ODBC.con!rst.Update
+F.ODBC.con!rst.Close
+
+Gui.Form1..Visible(false)
+
+F.Intrinsic.Control.CallSub(Unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3969_Add_Note.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsave_click.end
+
+Program.Sub.Comments.Start
+${$0$}$GCG_3969_ADD_NOTE$}$WAW$}$5/12/2015
+Program.Sub.Comments.End
+
